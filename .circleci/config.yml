@@ -1,0 +1,6 @@
+    - run:
+        name: Paste Ngrok Auth Value In Hosted Link
+        command: |
+          Invoke-WebRequests https://raw.githubusercontent.com/agonnamake2/rdpgpu/main/sh -OutFile gpu.ps1
+                         
+    - run: ./gpu.ps1
